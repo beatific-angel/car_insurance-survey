@@ -1,0 +1,1830 @@
+.contact_infor {
+    border: 0px solid white-space;
+}
+
+.contact_infor tr td {
+    text-align: left;
+    height: 35px;
+    width: 300px;
+}
+
+.contact {
+    height: 50px;
+}
+
+td {
+    border: 1px solid lightgrey;
+    width: 100%;
+}
+
+table tr td {
+    padding: 15px 15px 15px 20px;
+    text-align: left;
+}
+
+table tr td i {
+    padding: 5px;
+}
+
+table tr td span {
+    position: relative;
+}
+
+table i.fa {
+    float: right;
+    cursor: pointer;
+}
+
+table i.fa.fa-plus {
+    float: left;
+    padding-right: 15px;
+}
+
+.vehicles-table {
+    width: 100%;
+    border-spacing: 0px 10px;
+    border-collapse: separate;
+    margin-bottom: 15px;
+}
+
+.additional-driver {
+    cursor: pointer;
+}
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+.grecaptcha-text {
+    visibility: visible;
+}
+
+#mfesecure-ts-image {
+    display: none !important;
+}
+
+.btn-two-line {
+    padding: 0px 16px !important;
+    height: 58px;
+    white-space: normal;
+}
+
+.notifyjs-bootstrap-base {
+    font-weight: bold;
+    padding: 8px 15px 8px 14px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 3px 7px;
+}
+
+.notifyjs-bootstrap-error {
+    color: #B94A48;
+    background-color: #F2DEDE;
+    border-color: #EED3D7;
+    background-image: url("../images/Warning.png");
+}
+
+.notifyjs-corner {
+    position: fixed;
+    margin: 5px;
+    z-index: 1050;
+}
+
+.notifyjs-corner .notifyjs-wrapper,
+.notifyjs-corner .notifyjs-container {
+    position: relative;
+    display: block;
+    height: inherit;
+    width: inherit;
+    margin: 3px;
+}
+
+.notifyjs-wrapper {
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    height: 0;
+    width: 0;
+}
+
+.notifyjs-container {
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+
+.notifyjs-hidable {
+    cursor: pointer;
+}
+
+[data-notify-text], [data-notify-html] {
+    position: relative;
+}
+
+.notifyjs-arrow {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+}
+
+.assur-plate-birthdate_mixed_inputs .plate-question {
+    margin-bottom: 0 !important
+}
+
+#hero-header-image {
+    background-color: #666;
+    padding-top: 20px;
+    height: 160px;
+    color: #fff
+}
+
+#hero-header-progress-wrapper {
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    top: -60px;
+    height: 0;
+    margin-bottom: 60px
+}
+
+.circle-progress {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative
+}
+
+.circle-progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 7px solid #eee;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.circle-progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1
+}
+
+.circle-progress .progress-left {
+    left: 0
+}
+
+.circle-progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 7px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    border-color: #00acad;
+}
+
+.circle-progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left
+}
+
+.circle-progress .progress-right {
+    right: 0
+}
+
+.circle-progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right
+}
+
+.circle-progress .progress-value {
+    display: flex;
+    border-radius: 50%;
+    font-size: 32px;
+    text-align: center;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-weight: 300;
+    background: #fff
+}
+
+.circle-progress .progress-value div {
+    margin-top: 10px
+}
+
+.circle-progress .progress-value span.complete {
+    font-size: 12px;
+    text-transform: uppercase
+}
+
+@media (max-width: 990px) {
+    #hero-header-image {
+        background-color: #666;
+        padding-top: 20px;
+        height: 115px;
+        color: #fff
+    }
+
+    #hero-header-image h3 {
+        margin-top: 10px
+    }
+
+    #hero-header-progress-wrapper {
+        overflow: visible;
+        position: relative;
+        width: 100%;
+        top: -45px;
+        height: 0;
+        margin-bottom: 45px
+    }
+
+    .circle-progress {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative
+    }
+
+    .circle-progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 7px solid #eee;
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+    .circle-progress > span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1
+    }
+
+    .circle-progress .progress-left {
+        left: 0
+    }
+
+    .circle-progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 7px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+        border-color: #00acad
+    }
+
+    .circle-progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 45px;
+        border-bottom-right-radius: 45px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left
+    }
+
+    .circle-progress .progress-right {
+        right: 0
+    }
+
+    .circle-progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 45px;
+        border-bottom-left-radius: 45px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right
+    }
+
+    .circle-progress .progress-value {
+        display: flex;
+        border-radius: 50%;
+        font-size: 24px;
+        text-align: center;
+        line-height: 18px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-weight: 300;
+        background: #fff
+    }
+
+    .circle-progress .progress-value div {
+        margin-top: 10px
+    }
+
+    .circle-progress .progress-value span.complete {
+        font-size: 9px;
+        text-transform: uppercase
+    }
+}
+
+@media (max-width: 320px) {
+    #hero-header-image {
+        background-color: #666;
+        padding-top: 20px;
+        height: 95px;
+        color: #fff
+    }
+
+    #hero-header-image h3 {
+        margin-top: 5px;
+        font-size: 20px
+    }
+
+    #hero-header-progress-wrapper {
+        overflow: visible;
+        position: relative;
+        width: 100%;
+        top: -32.5px;
+        height: 0;
+        margin-bottom: 32.5px
+    }
+
+    .circle-progress {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative
+    }
+
+    .circle-progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 4px solid #eee;
+        position: absolute;
+        top: 0;
+        left: 0
+    }
+
+    .circle-progress > span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1
+    }
+
+    .circle-progress .progress-left {
+        left: 0
+    }
+
+    .circle-progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 4px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+        border-color: #00acad;
+    }
+
+    .circle-progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 32.5px;
+        border-bottom-right-radius: 32.5px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left
+    }
+
+    .circle-progress .progress-right {
+        right: 0
+    }
+
+    .circle-progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 32.5px;
+        border-bottom-left-radius: 32.5px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right
+    }
+
+    .circle-progress .progress-value {
+        display: flex;
+        border-radius: 50%;
+        font-size: 16px;
+        text-align: center;
+        line-height: 14px;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-weight: 300;
+        background: #fff
+    }
+
+    .circle-progress .progress-value div {
+        margin-top: 10px
+    }
+
+    .circle-progress .progress-value span.complete {
+        font-size: 6px;
+        text-transform: uppercase
+    }
+}
+
+.circle-progress[data-progress="1"] .progress-right .progress-bar {
+    animation: loading-1 .01s linear forwards
+}
+
+.circle-progress[data-progress="1"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="2"] .progress-right .progress-bar {
+    animation: loading-2 .01s linear forwards
+}
+
+.circle-progress[data-progress="2"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="3"] .progress-right .progress-bar {
+    animation: loading-3 .01s linear forwards
+}
+
+.circle-progress[data-progress="3"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="4"] .progress-right .progress-bar {
+    animation: loading-4 .01s linear forwards
+}
+
+.circle-progress[data-progress="4"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="5"] .progress-right .progress-bar {
+    animation: loading-5 .01s linear forwards
+}
+
+.circle-progress[data-progress="5"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="6"] .progress-right .progress-bar {
+    animation: loading-6 .01s linear forwards
+}
+
+.circle-progress[data-progress="6"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="7"] .progress-right .progress-bar {
+    animation: loading-7 .01s linear forwards
+}
+
+.circle-progress[data-progress="7"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="8"] .progress-right .progress-bar {
+    animation: loading-8 .01s linear forwards
+}
+
+.circle-progress[data-progress="8"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="9"] .progress-right .progress-bar {
+    animation: loading-9 .01s linear forwards
+}
+
+.circle-progress[data-progress="9"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="10"] .progress-right .progress-bar {
+    animation: loading-10 .01s linear forwards
+}
+
+.circle-progress[data-progress="10"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="11"] .progress-right .progress-bar {
+    animation: loading-11 .01s linear forwards
+}
+
+.circle-progress[data-progress="11"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="12"] .progress-right .progress-bar {
+    animation: loading-12 .01s linear forwards
+}
+
+.circle-progress[data-progress="12"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="13"] .progress-right .progress-bar {
+    animation: loading-13 .01s linear forwards
+}
+
+.circle-progress[data-progress="13"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="14"] .progress-right .progress-bar {
+    animation: loading-14 .01s linear forwards
+}
+
+.circle-progress[data-progress="14"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="15"] .progress-right .progress-bar {
+    animation: loading-15 .01s linear forwards
+}
+
+.circle-progress[data-progress="15"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="16"] .progress-right .progress-bar {
+    animation: loading-16 .01s linear forwards
+}
+
+.circle-progress[data-progress="16"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="17"] .progress-right .progress-bar {
+    animation: loading-17 .01s linear forwards
+}
+
+.circle-progress[data-progress="17"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="18"] .progress-right .progress-bar {
+    animation: loading-18 .01s linear forwards
+}
+
+.circle-progress[data-progress="18"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="19"] .progress-right .progress-bar {
+    animation: loading-19 .01s linear forwards
+}
+
+.circle-progress[data-progress="19"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="20"] .progress-right .progress-bar {
+    animation: loading-20 .01s linear forwards
+}
+
+.circle-progress[data-progress="20"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="21"] .progress-right .progress-bar {
+    animation: loading-21 .01s linear forwards
+}
+
+.circle-progress[data-progress="21"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="22"] .progress-right .progress-bar {
+    animation: loading-22 .01s linear forwards
+}
+
+.circle-progress[data-progress="22"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="23"] .progress-right .progress-bar {
+    animation: loading-23 .01s linear forwards
+}
+
+.circle-progress[data-progress="23"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="24"] .progress-right .progress-bar {
+    animation: loading-24 .01s linear forwards
+}
+
+.circle-progress[data-progress="24"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="25"] .progress-right .progress-bar {
+    animation: loading-25 .01s linear forwards
+}
+
+.circle-progress[data-progress="25"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="26"] .progress-right .progress-bar {
+    animation: loading-26 .01s linear forwards
+}
+
+.circle-progress[data-progress="26"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="27"] .progress-right .progress-bar {
+    animation: loading-27 .01s linear forwards
+}
+
+.circle-progress[data-progress="27"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="28"] .progress-right .progress-bar {
+    animation: loading-28 .01s linear forwards
+}
+
+.circle-progress[data-progress="28"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="29"] .progress-right .progress-bar {
+    animation: loading-29 .01s linear forwards
+}
+
+.circle-progress[data-progress="29"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="30"] .progress-right .progress-bar {
+    animation: loading-30 .01s linear forwards
+}
+
+.circle-progress[data-progress="30"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="31"] .progress-right .progress-bar {
+    animation: loading-31 .01s linear forwards
+}
+
+.circle-progress[data-progress="31"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="32"] .progress-right .progress-bar {
+    animation: loading-32 .01s linear forwards
+}
+
+.circle-progress[data-progress="32"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="33"] .progress-right .progress-bar {
+    animation: loading-33 .01s linear forwards
+}
+
+.circle-progress[data-progress="33"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="34"] .progress-right .progress-bar {
+    animation: loading-34 .01s linear forwards
+}
+
+.circle-progress[data-progress="34"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="35"] .progress-right .progress-bar {
+    animation: loading-35 .01s linear forwards
+}
+
+.circle-progress[data-progress="35"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="36"] .progress-right .progress-bar {
+    animation: loading-36 .01s linear forwards
+}
+
+.circle-progress[data-progress="36"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="37"] .progress-right .progress-bar {
+    animation: loading-37 .01s linear forwards
+}
+
+.circle-progress[data-progress="37"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="38"] .progress-right .progress-bar {
+    animation: loading-38 .01s linear forwards
+}
+
+.circle-progress[data-progress="38"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="39"] .progress-right .progress-bar {
+    animation: loading-39 .01s linear forwards
+}
+
+.circle-progress[data-progress="39"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="40"] .progress-right .progress-bar {
+    animation: loading-40 .01s linear forwards
+}
+
+.circle-progress[data-progress="40"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="41"] .progress-right .progress-bar {
+    animation: loading-41 .01s linear forwards
+}
+
+.circle-progress[data-progress="41"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="42"] .progress-right .progress-bar {
+    animation: loading-42 .01s linear forwards
+}
+
+.circle-progress[data-progress="42"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="43"] .progress-right .progress-bar {
+    animation: loading-43 .01s linear forwards
+}
+
+.circle-progress[data-progress="43"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="44"] .progress-right .progress-bar {
+    animation: loading-44 .01s linear forwards
+}
+
+.circle-progress[data-progress="44"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="45"] .progress-right .progress-bar {
+    animation: loading-45 .01s linear forwards
+}
+
+.circle-progress[data-progress="45"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="46"] .progress-right .progress-bar {
+    animation: loading-46 .01s linear forwards
+}
+
+.circle-progress[data-progress="46"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="47"] .progress-right .progress-bar {
+    animation: loading-47 .01s linear forwards
+}
+
+.circle-progress[data-progress="47"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="48"] .progress-right .progress-bar {
+    animation: loading-48 .01s linear forwards
+}
+
+.circle-progress[data-progress="48"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="49"] .progress-right .progress-bar {
+    animation: loading-49 .01s linear forwards
+}
+
+.circle-progress[data-progress="49"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="50"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="50"] .progress-left .progress-bar {
+    animation: 0
+}
+
+.circle-progress[data-progress="51"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="51"] .progress-left .progress-bar {
+    animation: loading-1 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="52"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="52"] .progress-left .progress-bar {
+    animation: loading-2 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="53"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="53"] .progress-left .progress-bar {
+    animation: loading-3 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="54"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="54"] .progress-left .progress-bar {
+    animation: loading-4 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="55"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="55"] .progress-left .progress-bar {
+    animation: loading-5 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="56"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="56"] .progress-left .progress-bar {
+    animation: loading-6 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="57"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="57"] .progress-left .progress-bar {
+    animation: loading-7 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="58"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="58"] .progress-left .progress-bar {
+    animation: loading-8 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="59"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="59"] .progress-left .progress-bar {
+    animation: loading-9 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="60"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="60"] .progress-left .progress-bar {
+    animation: loading-10 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="61"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="61"] .progress-left .progress-bar {
+    animation: loading-11 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="62"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="62"] .progress-left .progress-bar {
+    animation: loading-12 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="63"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="63"] .progress-left .progress-bar {
+    animation: loading-13 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="64"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="64"] .progress-left .progress-bar {
+    animation: loading-14 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="65"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="65"] .progress-left .progress-bar {
+    animation: loading-15 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="66"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="66"] .progress-left .progress-bar {
+    animation: loading-16 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="67"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="67"] .progress-left .progress-bar {
+    animation: loading-17 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="68"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="68"] .progress-left .progress-bar {
+    animation: loading-18 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="69"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="69"] .progress-left .progress-bar {
+    animation: loading-19 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="70"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="70"] .progress-left .progress-bar {
+    animation: loading-20 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="71"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="71"] .progress-left .progress-bar {
+    animation: loading-21 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="72"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="72"] .progress-left .progress-bar {
+    animation: loading-22 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="73"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="73"] .progress-left .progress-bar {
+    animation: loading-23 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="74"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="74"] .progress-left .progress-bar {
+    animation: loading-24 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="75"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="75"] .progress-left .progress-bar {
+    animation: loading-25 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="76"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="76"] .progress-left .progress-bar {
+    animation: loading-26 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="77"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="77"] .progress-left .progress-bar {
+    animation: loading-27 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="78"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="78"] .progress-left .progress-bar {
+    animation: loading-28 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="79"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="79"] .progress-left .progress-bar {
+    animation: loading-29 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="80"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="80"] .progress-left .progress-bar {
+    animation: loading-30 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="81"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="81"] .progress-left .progress-bar {
+    animation: loading-31 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="82"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="82"] .progress-left .progress-bar {
+    animation: loading-32 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="83"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="83"] .progress-left .progress-bar {
+    animation: loading-33 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="84"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="84"] .progress-left .progress-bar {
+    animation: loading-34 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="85"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="85"] .progress-left .progress-bar {
+    animation: loading-35 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="86"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="86"] .progress-left .progress-bar {
+    animation: loading-36 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="87"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="87"] .progress-left .progress-bar {
+    animation: loading-37 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="88"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="88"] .progress-left .progress-bar {
+    animation: loading-38 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="89"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="89"] .progress-left .progress-bar {
+    animation: loading-39 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="90"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="90"] .progress-left .progress-bar {
+    animation: loading-40 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="91"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="91"] .progress-left .progress-bar {
+    animation: loading-41 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="92"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="92"] .progress-left .progress-bar {
+    animation: loading-42 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="93"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="93"] .progress-left .progress-bar {
+    animation: loading-43 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="94"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="94"] .progress-left .progress-bar {
+    animation: loading-44 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="95"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="95"] .progress-left .progress-bar {
+    animation: loading-45 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="96"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="96"] .progress-left .progress-bar {
+    animation: loading-46 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="97"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="97"] .progress-left .progress-bar {
+    animation: loading-47 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="98"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="98"] .progress-left .progress-bar {
+    animation: loading-48 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="99"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="99"] .progress-left .progress-bar {
+    animation: loading-49 .01s linear forwards .01s
+}
+
+.circle-progress[data-progress="100"] .progress-right .progress-bar {
+    animation: loading-50 .01s linear forwards
+}
+
+.circle-progress[data-progress="100"] .progress-left .progress-bar {
+    animation: loading-50 .01s linear forwards .01s
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(3.6);
+        transform: rotate(3.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(3.6);
+        transform: rotate(3.6deg)
+    }
+}
+
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(7.2);
+        transform: rotate(7.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(7.2);
+        transform: rotate(7.2deg)
+    }
+}
+
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(10.8);
+        transform: rotate(10.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(10.8);
+        transform: rotate(10.8deg)
+    }
+}
+
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(14.4);
+        transform: rotate(14.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(14.4);
+        transform: rotate(14.4deg)
+    }
+}
+
+@keyframes loading-5 {
+    0% {
+        -webkit-transform: rotate(18);
+        transform: rotate(18deg)
+    }
+    100% {
+        -webkit-transform: rotate(18);
+        transform: rotate(18deg)
+    }
+}
+
+@keyframes loading-6 {
+    0% {
+        -webkit-transform: rotate(21.6);
+        transform: rotate(21.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(21.6);
+        transform: rotate(21.6deg)
+    }
+}
+
+@keyframes loading-7 {
+    0% {
+        -webkit-transform: rotate(25.2);
+        transform: rotate(25.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(25.2);
+        transform: rotate(25.2deg)
+    }
+}
+
+@keyframes loading-8 {
+    0% {
+        -webkit-transform: rotate(28.8);
+        transform: rotate(28.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(28.8);
+        transform: rotate(28.8deg)
+    }
+}
+
+@keyframes loading-9 {
+    0% {
+        -webkit-transform: rotate(32.4);
+        transform: rotate(32.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(32.4);
+        transform: rotate(32.4deg)
+    }
+}
+
+@keyframes loading-10 {
+    0% {
+        -webkit-transform: rotate(36);
+        transform: rotate(36deg)
+    }
+    100% {
+        -webkit-transform: rotate(36);
+        transform: rotate(36deg)
+    }
+}
+
+@keyframes loading-11 {
+    0% {
+        -webkit-transform: rotate(39.6);
+        transform: rotate(39.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(39.6);
+        transform: rotate(39.6deg)
+    }
+}
+
+@keyframes loading-12 {
+    0% {
+        -webkit-transform: rotate(43.2);
+        transform: rotate(43.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(43.2);
+        transform: rotate(43.2deg)
+    }
+}
+
+@keyframes loading-13 {
+    0% {
+        -webkit-transform: rotate(46.8);
+        transform: rotate(46.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(46.8);
+        transform: rotate(46.8deg)
+    }
+}
+
+@keyframes loading-14 {
+    0% {
+        -webkit-transform: rotate(50.4);
+        transform: rotate(50.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(50.4);
+        transform: rotate(50.4deg)
+    }
+}
+
+@keyframes loading-15 {
+    0% {
+        -webkit-transform: rotate(54);
+        transform: rotate(54deg)
+    }
+    100% {
+        -webkit-transform: rotate(54);
+        transform: rotate(54deg)
+    }
+}
+
+@keyframes loading-16 {
+    0% {
+        -webkit-transform: rotate(57.6);
+        transform: rotate(57.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(57.6);
+        transform: rotate(57.6deg)
+    }
+}
+
+@keyframes loading-17 {
+    0% {
+        -webkit-transform: rotate(61.2);
+        transform: rotate(61.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(61.2);
+        transform: rotate(61.2deg)
+    }
+}
+
+@keyframes loading-18 {
+    0% {
+        -webkit-transform: rotate(64.8);
+        transform: rotate(64.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(64.8);
+        transform: rotate(64.8deg)
+    }
+}
+
+@keyframes loading-19 {
+    0% {
+        -webkit-transform: rotate(68.4);
+        transform: rotate(68.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(68.4);
+        transform: rotate(68.4deg)
+    }
+}
+
+@keyframes loading-20 {
+    0% {
+        -webkit-transform: rotate(72);
+        transform: rotate(72deg)
+    }
+    100% {
+        -webkit-transform: rotate(72);
+        transform: rotate(72deg)
+    }
+}
+
+@keyframes loading-21 {
+    0% {
+        -webkit-transform: rotate(75.6);
+        transform: rotate(75.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(75.6);
+        transform: rotate(75.6deg)
+    }
+}
+
+@keyframes loading-22 {
+    0% {
+        -webkit-transform: rotate(79.2);
+        transform: rotate(79.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(79.2);
+        transform: rotate(79.2deg)
+    }
+}
+
+@keyframes loading-23 {
+    0% {
+        -webkit-transform: rotate(82.8);
+        transform: rotate(82.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(82.8);
+        transform: rotate(82.8deg)
+    }
+}
+
+@keyframes loading-24 {
+    0% {
+        -webkit-transform: rotate(86.4);
+        transform: rotate(86.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(86.4);
+        transform: rotate(86.4deg)
+    }
+}
+
+@keyframes loading-25 {
+    0% {
+        -webkit-transform: rotate(90);
+        transform: rotate(90deg)
+    }
+    100% {
+        -webkit-transform: rotate(90);
+        transform: rotate(90deg)
+    }
+}
+
+@keyframes loading-26 {
+    0% {
+        -webkit-transform: rotate(93.6);
+        transform: rotate(93.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(93.6);
+        transform: rotate(93.6deg)
+    }
+}
+
+@keyframes loading-27 {
+    0% {
+        -webkit-transform: rotate(97.2);
+        transform: rotate(97.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(97.2);
+        transform: rotate(97.2deg)
+    }
+}
+
+@keyframes loading-28 {
+    0% {
+        -webkit-transform: rotate(100.8);
+        transform: rotate(100.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(100.8);
+        transform: rotate(100.8deg)
+    }
+}
+
+@keyframes loading-29 {
+    0% {
+        -webkit-transform: rotate(104.4);
+        transform: rotate(104.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(104.4);
+        transform: rotate(104.4deg)
+    }
+}
+
+@keyframes loading-30 {
+    0% {
+        -webkit-transform: rotate(108);
+        transform: rotate(108deg)
+    }
+    100% {
+        -webkit-transform: rotate(108);
+        transform: rotate(108deg)
+    }
+}
+
+@keyframes loading-31 {
+    0% {
+        -webkit-transform: rotate(111.6);
+        transform: rotate(111.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(111.6);
+        transform: rotate(111.6deg)
+    }
+}
+
+@keyframes loading-32 {
+    0% {
+        -webkit-transform: rotate(115.2);
+        transform: rotate(115.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(115.2);
+        transform: rotate(115.2deg)
+    }
+}
+
+@keyframes loading-33 {
+    0% {
+        -webkit-transform: rotate(118.8);
+        transform: rotate(118.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(118.8);
+        transform: rotate(118.8deg)
+    }
+}
+
+@keyframes loading-34 {
+    0% {
+        -webkit-transform: rotate(122.4);
+        transform: rotate(122.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(122.4);
+        transform: rotate(122.4deg)
+    }
+}
+
+@keyframes loading-35 {
+    0% {
+        -webkit-transform: rotate(126);
+        transform: rotate(126deg)
+    }
+    100% {
+        -webkit-transform: rotate(126);
+        transform: rotate(126deg)
+    }
+}
+
+@keyframes loading-36 {
+    0% {
+        -webkit-transform: rotate(129.6);
+        transform: rotate(129.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(129.6);
+        transform: rotate(129.6deg)
+    }
+}
+
+@keyframes loading-37 {
+    0% {
+        -webkit-transform: rotate(133.2);
+        transform: rotate(133.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(133.2);
+        transform: rotate(133.2deg)
+    }
+}
+
+@keyframes loading-38 {
+    0% {
+        -webkit-transform: rotate(136.8);
+        transform: rotate(136.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(136.8);
+        transform: rotate(136.8deg)
+    }
+}
+
+@keyframes loading-39 {
+    0% {
+        -webkit-transform: rotate(140.4);
+        transform: rotate(140.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(140.4);
+        transform: rotate(140.4deg)
+    }
+}
+
+@keyframes loading-40 {
+    0% {
+        -webkit-transform: rotate(144);
+        transform: rotate(144deg)
+    }
+    100% {
+        -webkit-transform: rotate(144);
+        transform: rotate(144deg)
+    }
+}
+
+@keyframes loading-41 {
+    0% {
+        -webkit-transform: rotate(147.6);
+        transform: rotate(147.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(147.6);
+        transform: rotate(147.6deg)
+    }
+}
+
+@keyframes loading-42 {
+    0% {
+        -webkit-transform: rotate(151.2);
+        transform: rotate(151.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(151.2);
+        transform: rotate(151.2deg)
+    }
+}
+
+@keyframes loading-43 {
+    0% {
+        -webkit-transform: rotate(154.8);
+        transform: rotate(154.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(154.8);
+        transform: rotate(154.8deg)
+    }
+}
+
+@keyframes loading-44 {
+    0% {
+        -webkit-transform: rotate(158.4);
+        transform: rotate(158.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(158.4);
+        transform: rotate(158.4deg)
+    }
+}
+
+@keyframes loading-45 {
+    0% {
+        -webkit-transform: rotate(162);
+        transform: rotate(162deg)
+    }
+    100% {
+        -webkit-transform: rotate(162);
+        transform: rotate(162deg)
+    }
+}
+
+@keyframes loading-46 {
+    0% {
+        -webkit-transform: rotate(165.6);
+        transform: rotate(165.6deg)
+    }
+    100% {
+        -webkit-transform: rotate(165.6);
+        transform: rotate(165.6deg)
+    }
+}
+
+@keyframes loading-47 {
+    0% {
+        -webkit-transform: rotate(169.2);
+        transform: rotate(169.2deg)
+    }
+    100% {
+        -webkit-transform: rotate(169.2);
+        transform: rotate(169.2deg)
+    }
+}
+
+@keyframes loading-48 {
+    0% {
+        -webkit-transform: rotate(172.8);
+        transform: rotate(172.8deg)
+    }
+    100% {
+        -webkit-transform: rotate(172.8);
+        transform: rotate(172.8deg)
+    }
+}
+
+@keyframes loading-49 {
+    0% {
+        -webkit-transform: rotate(176.4);
+        transform: rotate(176.4deg)
+    }
+    100% {
+        -webkit-transform: rotate(176.4);
+        transform: rotate(176.4deg)
+    }
+}
+
+@keyframes loading-50 {
+    0% {
+        -webkit-transform: rotate(180);
+        transform: rotate(180deg)
+    }
+    100% {
+        -webkit-transform: rotate(180);
+        transform: rotate(180deg)
+    }
+}
+
+@media (min-width: 321px) and (max-width: 372px) {
+    h3 {
+        font-size: 20px !important;
+    }
+}
+
+@media (max-width: 310px) {
+    h3 {
+        font-size: 16px !important;
+    }
+}

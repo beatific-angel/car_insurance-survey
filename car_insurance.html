@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CarInsurance.net | Get a Quote</title>
+    <meta content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" name="viewport">
+    <link href="images/favicon_carnet-2e0c4f5d360dc1c3ea7dc34d6dd235afce5dfa0d42445a96a87b49a8729553df.png"
+          rel="icon" type="image/x-icon">
+    <script type="text/javascript" async="" src="js/recaptcha__en.js"></script>
+    <link rel="stylesheet" media="all" href="css/main.css" data-turbolinks-track="true">
+    <link rel="stylesheet" media="all" href="fonts/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" media="screen" href="css/extra.css">
+    <link rel="stylesheet" media="screen" href="css/user.css">
+    <script src="js/recaptcha_v3.js"></script>
+    <script src="js/api.js" defer="defer" async="async"></script>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+    <script type="text/javascript">
+        function fluid_length() {
+            for (var i = document.getElementsByClassName('content container-fluid').length - 1; i >= 0; i--) {
+                document.getElementsByClassName('content container-fluid')[i].style.display = "none";
+            }
+
+        }
+        function target_url_no() {
+            document.getElementById('load-pro').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_car');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page2').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "45";
+            document.getElementsByClassName('percent')[1].innerText = "45%"
+
+        }
+        function target_url_yes() {
+            document.getElementById('load-pro1').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text1_car');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page2').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "45";
+            document.getElementsByClassName('percent')[1].innerText = "45%"
+
+        }
+
+        function target_url_make() {
+            if (document.getElementById('dropdown_vehicle_make').value == "") {
+                document.getElementById('notify_alert').style.display = "inline-block";
+                document.getElementById('notify_alert1').style.display = "inline-block";
+                return;
+            }
+            document.getElementById('vehicle_make_button').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_make');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page3').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "50";
+            document.getElementsByClassName('percent')[1].innerText = "50%"
+        }
+
+        function target_url_model() {
+            if (document.getElementById('dropdown_vehicle_model').value == "") {
+                document.getElementById('notify_alert2').style.display = "inline-block";
+                document.getElementById('notify_alert3').style.display = "inline-block";
+                return;
+            }
+            document.getElementById('vehicle_model_button').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_model');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page4').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "54";
+            document.getElementsByClassName('percent')[1].innerText = "54%"
+        }
+        function target_url_Trim() {
+            if (document.getElementById('dropdown_vehicle_submodel').value == "") {
+                document.getElementById('notify_alert4').style.display = "inline-block";
+                document.getElementById('notify_alert5').style.display = "inline-block";
+                return;
+            }
+            document.getElementById('dropdown_vehicle_submodel').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_trim');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page5').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "57";
+            document.getElementsByClassName('percent')[1].innerText = "57%"
+        }
+
+        function target_url_vehicles() {
+            document.getElementById('load_pro').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_vehicles');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page7').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "81";
+            document.getElementsByClassName('percent')[1].innerText = "81%"
+        }
+        function target_url_year_vehicles() {
+            document.getElementById('load_year').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text1_vehicles');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page6').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "40";
+            document.getElementsByClassName('percent')[1].innerText = "40%"
+        }
+        function delete1(This) {
+            document.getElementById('delete1').remove();
+        }
+
+        function target_url_year() {
+            if (document.getElementById('dropdown_vehicle_year').value == "") {
+                document.getElementById('notify_alert6').style.display = "inline-block";
+                document.getElementById('notify_alert7').style.display = "inline-block";
+                return;
+            }
+            document.getElementById('vehicle_button').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_year');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page2').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "45";
+            document.getElementsByClassName('percent')[1].innerText = "45%"
+        }
+
+        function target_url_zip_owner() {
+            document.getElementById('load_zip').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_owner');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page9').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "90";
+            document.getElementsByClassName('percent')[1].innerText = "90%"
+        }
+        function target_url_insurance_owner() {
+            document.getElementById('load_insurance').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text1_owner');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page8').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "83";
+            document.getElementsByClassName('percent')[1].innerText = "83%"
+        }
+
+        function target_url_noinsurance() {
+            document.getElementById('load_yes').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_insurance');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page9').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "90";
+            document.getElementsByClassName('percent')[1].innerText = "90%"
+        }
+        function target_url_yesinsurance() {
+            document.getElementById('load_yes').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text1_insurance');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page9').style.display = "block";
+            document.getElementsByClassName('circle-progress')[0].dataset.progress = "90";
+            document.getElementsByClassName('percent')[1].innerText = "90%"
+        }
+        function target_url_zipcode() {
+            if (document.getElementById('hinet-zip').value == "") {
+                document.getElementById('notify_alert8').style.display = "inline-block";
+                document.getElementById('notify_alert9').style.display = "inline-block";
+                return;
+            }
+            if (document.getElementById('rem_text_zipcode').innerText == '' ) {
+                return;
+            }
+            document.getElementById('load_next').innerHTML +=
+                "<i class='fa fa-spinner fa-spin' style='display:inline-block;'></i> Loading";
+            var rem_text = document.getElementById('rem_text_zipcode');
+            rem_text.remove();
+            fluid_length();
+            document.getElementById('page10').style.display = "block";
+
+        }
+    </script>
+</head>
+<body class="carinsurance" id="customer-body-id-for-css" onload="">
+
+<div class="header white-fill light-shadow hidden-xs">
+    <div class="container-fluid percent">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-9 logo">
+                <div class="header-logo pull-left"
+                     style="background-image: url(&#39;images/carinsurance.png&#39;);"></div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-3 phone text-right">
+                <div class="phonetab text-center" style="display:inline-block; margin-top:10px;"><span class="text-sm">Speak to a Licensed Agent</span><br><a
+                        class="phone number text-lg bold primary-text" href="tel:447729774141" style="line-height:30px;"
+                        tabindex="-1">(772) 977-4141</a><br><span
+                        style="font-size:14px; line-height:15px; color:#595959"><i aria-hidden="true"
+                                                                                   class="fa fa-circle"
+                                                                                   style="margin-right:5px; font-size:.8em; color: #5cb85c"></i>Licensed Agents available now</span>
+                </div>
+                <img height="100px"
+                     src="images/ella-flip-080b58bfb270a0738da291bfc8693cbf683d222ee761597e682e29e21f6f76fc.png"
+                     style="display:inline-flex; float:right; margin-top:5px;"></div>
+        </div>
+    </div>
+</div>
+<div class="header white-fill light-shadow visible-xs" style="height: 48px;">
+    <div class="header-mobile-logo pull-left"
+         style="background-image: url(&#39;images/carinsurance.png&#39;);"></div>
+    <a class="phone clickable fit btn-sm pull-right" href="tel:447729774141"
+       style="margin-right: 8px; margin-top: 8px; background-image: linear-gradient(-180deg, #FFFFFF 0%, #D6E3F2 100%); border: 1px solid #E4F1FF; box-shadow: 0 0 0 1px #00acad; border-radius: 4px; font-size: 14px; height: 32px; line-height: 32px; padding: 0px 8px; font-weight: 600; color: #007a85;"
+       tabindex="-1"><i class="fa fa-phone" style="margin-right: 4px"></i>Call an Agent</a></div>
+<div class="content-wrapper">
+    <div class="container-fluid" id="progress-wrapper" style="">
+        <div class="progress-bar-wrapper">
+            <div class="progress-bar secondary-fill" data-progress="49.136169383427266" data-show="true"
+                 id="progress-bar" style="width: 20.412%;"></div>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div id="hero-header-wrapper">
+        <div class="clearfix"></div>
+        <div id="hero-header-image"
+             style="background-image: url(images/hero-auto-2.jpg); background-repeat: no-repeat; background-position: center top; background-size: cover;">
+            <div class="clearfix"></div>
+            <h1 class="hidden-sm hidden-xs text-center">See How Much We Can Save You!</h1>
+            <h3 class="visible-sm visible-xs text-center">See How Much We Can Save&nbsp;You!</h3>
+            <div class="clearfix"></div>
+        </div>
+
+        <!--21%-->
+        <div id="hero-header-progress-wrapper" class="pro1" style="display:block; ">
+            <div id="hero-header-progress">
+                <div class="circle-progress" data-progress="21"><span class="progress-left"><span
+                        class="progress-bar"></span></span><span class="progress-right"><span
+                        class="progress-bar"></span></span>
+                    <div class="progress-value">
+                        <div class="progress-content"><span class="percent">21%</span><br><span class="complete">completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="container-fluid" id="static-content-wrapper"></div>
+</div>
+<div class="content-wrapper">
+    <div class="container-fluid" id="flash-wrapper" style="max-height: 0px; overflow: auto;"></div>
+</div>
+<div class="content-wrapper" id="content-wrapper">
+
+    <!--car_insurance-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: block;" id="page1">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content">
+                    <div class="space-bottom-md"></div>
+                    <h3 style="font-size: 23px;">Do you have car insurance?</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <button class="btn btn-lg button positive plate-submit" id="load-pro"
+                                    data-operation="update_has_existing_policy" data-value="false" type="button"
+                                    data-testid="No" onclick="target_url_no();">
+                                <span id="rem_text_car">No</span>
+                            </button>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <button class="btn btn-lg button positive plate-submit" id="load-pro1"
+                                    data-operation="update_has_existing_policy" data-value="true" type="button"
+                                    data-testid="Yes" onclick="target_url_yes();">
+                                <span id="rem_text1_car">Yes</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 hidden-xs"><a class="phone text-sm text-center-xs primary-text"
+                                                        href="tel:447729774141" tabindex="-1"><span>OR CALL&nbsp;</span>
+                        <div class="number bold">(772) 977-4141</div>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end car insurance-->
+
+    <!-- make part-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page2">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content">
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="col-md-12"><h3>Vehicle Make</h3></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="notifyjs-wrapper notifyjs-hidable">
+                                    <div class="notifyjs-arrow" id="notify_alert"
+                                         style="bottom: 0px; left: -269.663px; border-top: 5px solid rgb(238, 211, 215); border-left: 5px solid transparent; border-right: 5px solid transparent; display: none;"></div>
+                                    <div class="notifyjs-container" id="notify_alert1"
+                                         style="bottom: 5px; left:-360.663px; display: none;">
+                                        <div class="notifyjs-bootstrap-base notifyjs-bootstrap-error">
+                                            <span data-notify-text="">Please enter vehicle Make</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <select class="form-control validate valid" data-autofocus="true"
+                                        data-operation="update_vehicle_make" data-required="Please enter vehicle make"
+                                        data-validatehandler="onblurSelectEventHandler" id="dropdown_vehicle_make"
+                                        name="make" data-testid="dropdown_vehicle_make">
+                                    <option value="">Other Make</option>
+                                    <option value="ACURA">Acura</option>
+                                    <option value="ALFA ROMEO">Alfa Romeo</option>
+                                    <option value="AUDI">Audi</option>
+                                    <option value="BMW">BMW</option>
+                                    <option value="BUICK" selected="selected">Buick</option>
+                                    <option value="CADILLAC">Cadillac</option>
+                                    <option value="CHEVROLET">Chevrolet</option>
+                                    <option value="CHRYSLER">Chrysler</option>
+                                    <option value="DODGE">Dodge</option>
+                                    <option value="FIAT">Fiat</option>
+                                    <option value="FORD">Ford</option>
+                                    <option value="GENESIS">Genesis</option>
+                                    <option value="GMC">GMC</option>
+                                    <option value="HONDA">Honda</option>
+                                    <option value="HYUNDAI">Hyundai</option>
+                                    <option value="INFINITI">Infiniti</option>
+                                    <option value="JAGUAR">Jaguar</option>
+                                    <option value="JEEP">Jeep</option>
+                                    <option value="KIA">Kia</option>
+                                    <option value="LAND ROVER">Land Rover</option>
+                                    <option value="LEXUS">Lexus</option>
+                                    <option value="LINCOLN">Lincoln</option>
+                                    <option value="MASERATI">Maserati</option>
+                                    <option value="MAZDA">Mazda</option>
+                                    <option value="MERCEDES-BENZ">Mercedes-Benz</option>
+                                    <option value="MINI">Mini</option>
+                                    <option value="MITSUBISHI">Mitsubishi</option>
+                                    <option value="NISSAN">Nissan</option>
+                                    <option value="PORSCHE">Porsche</option>
+                                    <option value="RAM">Ram</option>
+                                    <option value="SMART">Smart</option>
+                                    <option value="SUBARU">Subaru</option>
+                                    <option value="TESLA">Tesla</option>
+                                    <option value="TOYOTA">Toyota</option>
+                                    <option value="VOLKSWAGEN">Volkswagen</option>
+                                    <option value="VOLVO">Volvo</option>
+                                </select>
+                                <i class="fa fa-sort input-addon"></i></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="row pull-center">
+                            <button class="btn button positive btn-lg plate-submit pull-right"
+                                    data-operation="dropdown_vehicle_make" data-reference="true"
+                                    id="vehicle_make_button" style="" type="button" data-testid="Continue"
+                                    onclick="target_url_make();"><span id="rem_text_make">Continue</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 hidden-xs"><a class="phone text-sm text-center-xs primary-text"
+                                                        href="tel:447729774141" tabindex="-1"><span>OR CALL&nbsp;</span>
+                        <div class="number bold">(772) 977-4141</div>
+                    </a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end -->
+
+
+    <!--Model-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page3">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content">
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="col-md-12"><h3>Vehicle Model</h3></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="notifyjs-wrapper notifyjs-hidable">
+                                    <div class="notifyjs-arrow" id="notify_alert2"
+                                         style="bottom: 0px; left: -269.663px; border-top: 5px solid rgb(238, 211, 215); border-left: 5px solid transparent; border-right: 5px solid transparent; display: none;"></div>
+                                    <div class="notifyjs-container" id="notify_alert3"
+                                         style="bottom: 5px; left:-360.663px; display: none;">
+                                        <div class="notifyjs-bootstrap-base notifyjs-bootstrap-error">
+                                            <span data-notify-text="">Please enter vehicle model</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <select onchange="onchange_model()" class="form-control validate"
+                                        data-operation="update_vehicle_model"
+                                        data-required="Please enter vehicle model"
+                                        data-validatehandler="onblurSelectEventHandler"
+                                        id="dropdown_vehicle_model" name="model"
+                                        data-testid="dropdown_vehicle_model">
+                                    <option value="">-- Select Model --</option>
+                                    <option value="A3">A3</option>
+                                    <option value="A6">A6</option>
+                                    <option value="A7">A7</option>
+                                    <option value="A8">A8</option>
+                                    <option value="R8">R8</option>
+                                    <option value="S3">S3</option>
+                                    <option value="S7">S7</option>
+                                    <option value="S8">S8</option>
+                                </select><i class="fa fa-sort input-addon"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="row pull-center">
+                            <button class="btn button positive btn-lg plate-submit pull-right"
+                                    data-operation="dropdown_vehicle_model" data-reference="true"
+                                    id="vehicle_model_button" style="" type="button" data-testid="Continue"
+                                    onclick="target_url_model();"><span id="rem_text_model">Continue</span>
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xs-12 hidden-xs"><a class="phone text-sm text-center-xs primary-text"
+                                                        href="tel:447729774141" tabindex="-1"><span>OR CALL&nbsp;</span>
+                        <div class="number bold">(772) 977-4141</div>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end Model-->
+
+
+    <!--Trim-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page4">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content">
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="col-md-12"><h3>Vehicle Trim</h3></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="notifyjs-wrapper notifyjs-hidable">
+                                    <div class="notifyjs-arrow" id="notify_alert4"
+                                         style="bottom: 0px; left: -269.663px; border-top: 5px solid rgb(238, 211, 215); border-left: 5px solid transparent; border-right: 5px solid transparent; display: none;"></div>
+                                    <div class="notifyjs-container" id="notify_alert5"
+                                         style="bottom: 5px; left:-360.663px; display: none;">
+                                        <div class="notifyjs-bootstrap-base notifyjs-bootstrap-error">
+                                            <span data-notify-text="">Please enter vehicle Trim</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <select class="form-control validate"
+                                        data-operation="update_vehicle_submodel"
+                                        data-validatehandler="onblurSelectEventHandler"
+                                        id="dropdown_vehicle_submodel" name="submodel"
+                                        data-testid="dropdown_vehicle_submodel">
+                                    <option value="">-- Select Trim --</option>
+                                    <option value="A3 2.0T QUATTRO PREMIUM PLUS S-LINE">A3 2.0T QUATTRO PREMIUM PLUS
+                                        S-LINE
+                                    </option>
+                                    <option value="A3 2.0T QUATTRO PREMIUM S-LINE">A3 2.0T QUATTRO PREMIUM S-LINE
+                                    </option>
+                                    <option value="A3 2.0T SPORT PREMIUM">A3 2.0T SPORT PREMIUM</option>
+                                    <option value="A3 2.0T SPORT PREMIUM PLUS">A3 2.0T SPORT PREMIUM PLUS</option>
+                                </select><i class="fa fa-sort input-addon"></i></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="row pull-center">
+                            <button class="btn button positive btn-lg plate-submit pull-right"
+                                    data-operation="dropdown_vehicle_submodel" data-reference="true"
+                                    id="vehicle_submodel_button" style="" type="button" data-testid="Continue"
+                                    onclick="target_url_Trim();"><span id="rem_text_trim">Continue</span>
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-xs-12 hidden-xs"><a class="phone text-sm text-center-xs primary-text"
+                                                        href="tel:447729774141" tabindex="-1"><span>OR CALL&nbsp;</span>
+                        <div class="number bold">(772) 977-4141</div>
+                    </a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end Trim-->
+
+
+    <!--Vehicles-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page5">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content">
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="col-md-12"><h3>Your Vehicles</h3></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <table class="vehicles-table">
+                            <tbody>
+                            <tr id="delete1">
+                                <td><span>2018 BMW 340I</span>
+                                    <i class="fa fa-trash-o pointer plate-submit" data-direction="none"
+                                       data-operation="delete_vehicle_1" data-value="0" id="delete_vehicle_1"
+                                       onclick="delete1()"></i></td>
+                            </tr>
+                            <tr id="delete1">
+                                <td><span>2020  </span><i class="fa fa-trash-o pointer plate-submit"
+                                                          data-direction="none" data-operation="delete_vehicle_2"
+                                                          data-value="1" id="delete_vehicle_2" onclick="delete1()"></i>
+                                </td>
+                            </tr>
+                            <tr id="delete1">
+                                <td><span>2021  </span><i class="fa fa-trash-o pointer plate-submit"
+                                                          data-direction="none" data-operation="delete_vehicle_3"
+                                                          data-value="2" id="delete_vehicle_3" onclick="delete1()"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="additional-driver plate-submit"
+                                    data-operation="customer-reset-year,customer-reset-make,customer-reset-model,increase-index,skip-vehicles"
+                                    data-reference="true" id="load_year" onclick="target_url_year_vehicles();">
+                                <span id="rem_text1_vehicles">Add Another Vehicle
+                                <i class="fa fa-plus"></i></span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <input data-operation="update_customer_completed_year" id="customer-reset-year" type="hidden"
+                           value="false"><input data-operation="update_customer_completed_make" id="customer-reset-make"
+                                                type="hidden" value="false"><input
+                        data-operation="update_customer_completed_model" id="customer-reset-model" type="hidden"
+                        value="false"><input data-operation="update_current_vehicle_index" id="increase-index"
+                                             type="hidden" value="4"><input data-operation="update_vehicle_count"
+                                                                            id="vehicle-count" type="hidden"
+                                                                            value="4"><input
+                        data-operation="update_current_vehicle_index" id="vehicle-count" type="hidden" value="4"><input
+                        data-operation="update_skip_vehicles" id="skip-vehicles" type="hidden" value="false">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4 col-md-offset-4">
+                            <button class="btn button positive btn-lg plate-submit pull-right" id="load_pro"
+                                    data-operation="vehicle-count" data-reference="true" type="button"
+                                    data-testid="Continue" onclick="target_url_vehicles();"><span
+                                    id="rem_text_vehicles">Continue</span></button>
+                        </div>
+                        <div class="col-xs-12 hidden-xs"><a class="phone text-sm text-center-xs primary-text"
+                                                            href="tel:18559774141"
+                                                            tabindex="-1"><span>OR CALL&nbsp;</span>
+                            <div class="number bold">(855) 977-4141</div>
+                        </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end Vehicles-->
+
+
+    <!--Year-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page6">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content">
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="col-md-12"><h3>Vehicle Year</h3></div>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-md-offset-3">
+                        <div class="form-group">
+                            <div class="notifyjs-wrapper notifyjs-hidable">
+                                <div class="notifyjs-arrow" id="notify_alert6"
+                                     style="bottom: 0px; left: -269.663px; border-top: 5px solid rgb(238, 211, 215); border-left: 5px solid transparent; border-right: 5px solid transparent; display: none;"></div>
+                                <div class="notifyjs-container" id="notify_alert7"
+                                     style="bottom: 5px; left:-360.663px; display: none;">
+                                    <div class="notifyjs-bootstrap-base notifyjs-bootstrap-error">
+                                        <span data-notify-text="">Please enter vehicle Year</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <select class="form-control validate" data-autofocus="true"
+                                    data-operation="update_vehicle_year"
+                                    data-required="Please enter vehicle year"
+                                    data-validatehandler="onblurSelectEventHandler"
+                                    id="dropdown_vehicle_year" name="year"
+                                    data-testid="dropdown_vehicle_year">
+                                <option value="">-- Select Year --</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                            </select><i class="fa fa-sort input-addon"></i></div>
+                    </div>
+                    <br>
+                    <div class="col-xs-12 col-md-4 col-md-offset-4">
+                        <div class="row pull-center">
+                            <button class="btn button positive btn-lg plate-submit"
+                                    data-operation="dropdown_vehicle_year" data-reference="true" id="vehicle_button"
+                                    style="" type="button" data-testid="Continue" onclick="target_url_year();"><span
+                                    id="rem_text_year">Continue</span></button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 hidden-xs"><a class="phone text-sm text-center-xs primary-text"
+                                                        href="tel:18559774141" tabindex="-1"><span>OR CALL&nbsp;</span>
+                        <div class="number bold">(855) 977-4141</div>
+                    </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end Year-->
+
+
+    <!--business owner-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page7">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content"><h3 style="font-size: 23px;">Are you a business
+                    owner?</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <button class="btn btn-lg button positive plate-submit" id="load_zip"
+                                    data-operation="update_business_owner" data-value="false" type="button"
+                                    data-testid="No" onclick="target_url_zip_owner();"><span
+                                    id="rem_text_owner">No</span></button>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <button class="btn btn-lg button positive plate-submit" id="load_insurance"
+                                    data-operation="update_business_owner" data-value="true" type="button"
+                                    data-testid="Yes" onclick="target_url_insurance_owner();"><span
+                                    id="rem_text1_owner">Yes</span></button>
+                        </div>
+                        <div class="col-xs-12 hidden-xs"><a class="phone text-sm text-center-xs primary-text"
+                                                            href="tel:18559774141"
+                                                            tabindex="-1"><span>OR CALL&nbsp;</span>
+                            <div class="number bold">(855) 977-4141</div>
+                        </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end business owner-->
+
+
+    <!--business  insurance-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page8">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content"><h3 style="font-size: 23px;">Would you like to get a free
+                    quote for business insurance?</h3>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <button class="btn btn-lg button positive plate-submit" id="load_no"
+                                    data-operation="interested_in_business_insurance" data-reference="false"
+                                    data-value="false" type="button" data-testid="No"
+                                    onclick="target_url_noinsurance();"><span id="rem_text_insurance">No</span></button>
+                        </div>
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <button class="btn btn-lg button positive plate-submit" id="load_yes"
+                                    data-operation="interested_in_business_insurance" data-reference="false"
+                                    data-value="true" type="button" data-testid="Yes"
+                                    onclick="target_url_yesinsurance();"><span id="rem_text1_insurance">Yes</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 hidden-xs"><a class="phone text-sm text-center-xs primary-text"
+                                                        href="tel:18559774141" tabindex="-1"><span>OR CALL&nbsp;</span>
+                        <div class="number bold">(855) 977-4141</div>
+                    </a></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--end business insurance-->
+
+
+    <!--zip code part-->
+    <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page9">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content">
+                    <div class="plate-question">What is your zip code?</div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                            <div class="form-group">
+                                <div class="notifyjs-wrapper notifyjs-hidable">
+                                    <div class="notifyjs-arrow" id="notify_alert8"
+                                         style="bottom: 0px; left: -243.663px; border-top: 5px solid rgb(238, 211, 215); border-left: 5px solid transparent; border-right: 5px solid transparent; display: none;"></div>
+                                    <div class="notifyjs-container" id="notify_alert9"
+                                         style="bottom: 5px; left:-333.663px; display: none;">
+                                        <div class="notifyjs-bootstrap-base notifyjs-bootstrap-error">
+                                            <span data-notify-text="">Please enter zip code</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><input autocomplete="postal-code" class="form-control mask validate zip-code valid"
+                                            data-mask-pattern="00000" data-operation="update_zip"
+                                            data-required="Please provide your zip code"
+                                            data-validatehandler="onblurTextEventHandler" id="hinet-zip" maxlength="5"
+                                            placeholder="Enter Zip" type="tel" value="39501"
+                                            data-testid="EnterZip"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                            <button class="btn button positive btn-lg plate-submit" id="load_next"
+                                    data-operation="hinet-zip" data-reference="true" type="button"
+                                    data-testid="Continue" onclick="target_url_zipcode();"><span id="rem_text_zipcode">Continue</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end zip code-->
+
+
+<!--last step-->
+        <div class="content container-fluid" style="left: 0px; right: 0px;display: none;" id="page10">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 plate-breakpoint">
+                <div class="plate-content" id="plate-content">
+                    <div class="plate-question">Your Contact</div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                            <div class="form-group">
+                                <div class="notifyjs-wrapper notifyjs-hidable">
+                                    <div class="notifyjs-arrow" id="notify_alert8"
+                                         style="bottom: 0px; left: -243.663px; border-top: 5px solid rgb(238, 211, 215); border-left: 5px solid transparent; border-right: 5px solid transparent; display: none;"></div>
+                                    <div class="notifyjs-container" id="notify_alert9"
+                                         style="bottom: 5px; left:-333.663px; display: none;">
+                                        <div class="notifyjs-bootstrap-base notifyjs-bootstrap-error">
+                                            <span data-notify-text="">Please enter Contact</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <table class="contact_infor" style="    border: 0px solid white-space;">
+                                        <tr class="contact" style="height: 50px;">
+                                            <td>UserName</td>
+                                            <td><input class="Name" type="text" placeholder="edmond">  </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><input class="Email" type="Email" placeholder="edmond@gmail.com">  </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Phone</td>
+                                            <td><input class="Phone" type="phone" placeholder="+447727414" style="height: 50px;width: 260px">  </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-sm-offset-4">
+                            <button class="btn button positive btn-lg plate-submit" id="load_next"
+                                    data-operation="hinet-zip" data-reference="true" type="button"
+                                    data-testid="Continue" onclick="target_url_contact();"><span id="rem_text_zipcode">Continue</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="as_footer1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <div class="logos"><img alt="BBB Certified" height="48px"
+                                        src="font/bbb-logo-246e878a2429720cd8ee6c3446d30c82ec5b5c39a7c32cab999e7c5b109939ce.svg"
+                                        style="margin-right:10px; vertical-align: top;">
+                    <div class="mfes-trustmark loaded" data-height="48" data-type="102" data-width="116"
+                         style="width: 116px; height: 47px; display: inline-block; background-image: url(&quot;https://cdn.ywxi.net/meter/carinsurance.net/102.svg?ts=1582659742956&quot;); background-size: contain; background-position: center top; background-repeat: no-repeat; cursor: pointer;"></div>
+                </div>
+                <p class="urls"><a href="">Terms of
+                    Service</a>|<a href="">Privacy Policy</a>|<a
+                        href="">Do Not Sell My Personal
+                    Information</a>|<a href="">Contact Us</a>©
+                    Copyright Carinsurance.net 2020</p>
+                <p class="disclosure-text">Invitations for application for insurance on carinsurance.net are made
+                    through ASSURANCE IQ, INC or through its designated agent, Michael W. Rowell, only where licensed
+                    and appointed. License numbers are available upon request and are automatically provided where
+                    required by law. Michael Rowell is a licensed life insurance agent in all Countries of the <strong>United
+                        Kingdom</strong>, and his resident state of london. Michael W. Rowell’s Washington license
+                    number is 150354; in Northern Ireland, 0C83033; in Scotland, 265202; in Wales, 20234878; in England,
+                    126919;.
+                    ASSURANCE IQ’s National Producer license number is 17911320 (d/b/a ASSURANCE Insurance Services).
+
+                    This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+            </div>
+        </div>
+        <div class="row grecaptcha-text">
+            <div class="col-xs-12 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 disclosure-text">This site is
+                protected by reCAPTCHA and the Google<a href=""> Privacy Policy</a>&nbsp;and<a
+                        href=""> Terms of Service</a>&nbsp;apply.
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="modal-wrapper"></div>
+<div>
+    <div class="grecaptcha-badge" data-style="bottomright"
+         style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;">
+        <div class="grecaptcha-logo">
+        </div>
+        <div class="grecaptcha-error"></div>
+        <textarea id="g-recaptcha-response-100000" name="g-recaptcha-response" class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"
+                  data-testid="g-recaptcha-response"></textarea></div>
+</div>
+</body>
+</html>
